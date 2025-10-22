@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melbourne Website Design Blog - Expert insights on web design, development, and digital strategy">
+    <meta name="keywords" content="website design blog, Melbourne, web development tips, digital strategy, SEO">
+    <meta name="author" content="Melbourne Website Design">
+    <meta property="og:title" content="Melbourne Website Design Blog - Expert Insights">
+    <meta property="og:description" content="Read expert articles on website design, web development, and digital marketing strategies for Melbourne businesses">
+    <meta property="og:type" content="website">
+    <title>Blog - Melbourne Website Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        .accordion-button {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #2563eb;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-card {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease-in-out;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.3);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm smooth-transition">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="https://test-acc-12349.github.io/melbourne-website-design-2025-10-22-722vz" class="text-2xl font-bold gradient-text hover:opacity-80 smooth-transition">MWD</a>
+                </div>
+                
+                <!-- Back Link -->
+                <a href="https://test-acc-12349.github.io/melbourne-website-design-2025-10-22-722vz" class="nav-link text-gray-700 font-medium hover:text-blue-600">← Back</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 md:py-32 lg:py-40 bg-gradient-to-br from-blue-50 via-white to-gray-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+                    Our Blog
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-semibold mb-4 gradient-text">
+                    Expert Insights on Web Design & Digital Strategy
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl">
+                    Discover in-depth articles, industry trends, and best practices for building high-performing websites that drive business results. Our team shares expert knowledge on modern web design, SEO optimization, user experience, and digital marketing strategies tailored for Melbourne businesses.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+                    Latest Articles
+                </h2>
+                
+                <!-- Featured Blog Post -->
+                <div class="blog-card bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 md:p-12">
+                        <!-- Content -->
+                        <div class="md:col-span-2">
+                            <div class="mb-4">
+                                <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 text-sm font-semibold rounded-lg">Featured</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                                Getting Started with Our Platform
+                            </h3>
+                            <div class="flex items-center gap-4 mb-6">
+                                <span class="text-sm font-semibold text-gray-500">Published on</span>
+                                <span class="text-sm font-bold text-blue-600">October 22, 2025</span>
+                            </div>
+                            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                                Professional website design in Melbourne is essential for business success in today's digital landscape. This comprehensive guide explores modern web design principles including responsive design, user-centric approaches, and performance optimization. Key elements like visual hierarchy, brand consistency, and intuitive navigation drive user engagement and conversions. The guide emphasizes integrating SEO and conversion rate optimization from the start, not as afterthoughts. It highlights the importance of choosing experienced local web design partners who understand Melbourne's market while applying global best practices. Ultimately, investing in professional website design builds credibility, improves visibility, and delivers measurable business growth.
+                            </p>
+                            <a href="https://test-acc-12349.github.io/melbourne-website-design-2025-10-22-722vz/blog/getting-started-with-our-platform.html" class="cta-button inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                Read Full Article →
+                            </a>
+                        </div>
+                        
+                        <!-- Visual Element -->
+                        <div class="hidden md:block">
+                            <div class="relative h-full min-h-96">
+                                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg transform rotate-2 opacity-10 blur-xl"></div>
+                                <div class="relative h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-8 flex flex-col justify-center items-center shadow-lg">
+                                    <svg class="w-24 h-24 text-white opacity-20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                                    </svg>
+                                    <p class="text-white text-center font-semibold opacity-30">Web Design Guide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories & Coming Soon Section -->
+    <section class="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+                    More Articles Coming Soon
+                </h2>
+                <p class="text-xl text-gray-600 mb-12 max-w-2xl">
+                    We're continuously publishing new articles across these topics:
+                </p>
+                
+                <!-- Category Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Category 1: Web Design -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Web Design</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Modern design principles, responsive layouts, user experience optimization, and visual design trends for contemporary websites.
+                        </p>
+                    </div>
+                    
+                    <!-- Category 2: Development -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Web Development</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Technical implementation, performance optimization, security best practices, and development tools for building robust websites.
+                        </p>
+                    </div>
+                    
+                    <!-- Category 3: SEO -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">SEO & Marketing</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Search engine optimization, content strategy, keyword research, and digital marketing techniques to increase visibility and traffic.
+                        </p>
+                    </div>
+                    
+                    <!-- Category 4: Conversion Optimization -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">CRO & Analytics</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Conversion rate optimization, A/B testing, analytics insights, and data-driven strategies to maximize business results.
+                        </p>
+                    </div>
+                    
+                    <!-- Category 5: Case Studies -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Case Studies</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Real-world project examples, success stories from Melbourne businesses, and detailed breakdowns of our design processes.
+                        </p>
+                    </div>
+                    
+                    <!-- Category 6: Industry Trends -->
+                    <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg">
+                        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Industry Trends</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Latest web design trends, emerging technologies, industry news, and forward-looking insights for digital professionals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 md:py-32 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(37, 99, 235, 0.85), rgba(30, 64, 175, 0.85)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
+                Ready to Elevate Your Website?
+            </h2>
+            <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Apply the insights from our blog to your project. Let our expert team help you create a website that drives real business results.
+            </p>
+            <a href="https://test-acc-12349.github.io/melbourne-website-design-2025-10-22-722vz" class="cta-button inline-block px-10 py-4 bg-white text-blue-600 font-bold text-lg rounded-lg shadow-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600">
+                Get Your Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+                Stay Updated
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Subscribe to our newsletter to receive the latest articles, industry insights, and web design tips delivered directly to your inbox.
+            </p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email address" required class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent smooth-transition" aria-label="Email address for newsletter">
+                <button type="submit" class="cta-button px-8 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Subscribe
+                </button>
+            </form>
+            <p class="text-sm text-gray-600 mt-4">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4 gradient-text">MWD</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Melbourne Website Design - Creating stunning, high-performing websites that drive results for your business.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 smooth-transition" aria-label="Facebook">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 smooth-transition" aria-label="Twitter">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-9.5 5M9 19c1.395 0 2.74-.225 4.031-.644"></path></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 smooth-transition" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Website Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">SEO Optimization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Hosting & Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white smooth-transition">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 Melbourne Website Design. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        Designed and developed with <span class="text-red-500">❤</span> for Melbourne businesses
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .blog-card, .bg-white').forEach(el => {
+            el.style.opacity = '0.8';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
